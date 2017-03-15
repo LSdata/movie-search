@@ -1,0 +1,81 @@
+/*my custom stylings*/
+
+body{
+    margin: 5%;
+    margin-top:0px;
+    margin-right:6%;
+    padding-right: 6%;
+    margin-bottom: 50px;
+    font-size: 14px;
+    font-family: arial;
+}
+
+/*top menu tabs*/
+.nav {
+    float: right;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus{
+    background-color: lightgrey; 
+    color:#3277b3;
+} 
+.nav-tabs > li > a:hover{
+    color: #428bca;
+    border-bottom:none;
+}
+
+/*elements*/
+a{
+    color:black;
+}
+#a-link{
+    color: blue;
+}
+.header{
+    margin:0px;
+}
+
+/*search results*/
+#info{
+    color: blue;
+    font-style: italic;
+}
+#url{
+    color: #003399;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+.tab-pane, .tab-content{
+    padding-left: 0px;
+}
+
+/*Table*/
+.hide{
+    display: none;
+}
+.display{
+    display: table;
+}
+#table_Div{
+    margin-bottom: 50px;
+}
+td {
+    border: 1px solid #3277b3;
+}
+table{
+    margin-left: 12px;
+    border: 1px solid #3277b3;
+}
+.header-row{
+    background-color: #88b5dd;
+}
+th{
+    background-color: #88b5dd;
+    border: 1px solid #3277b3;
+}
+
+

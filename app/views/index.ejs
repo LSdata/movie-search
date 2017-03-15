@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<!--
+
+Default start page for this site. 
+
+Created with the Express.js template engine EJS.
+The site is responsive using the Bootstrap framework.
+The table with movies is created with the plugin DataTables.
+
+-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>OMDb movies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Stylings -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/views/stylesheets/styling.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.13/css/jquery.dataTables.css">
+    
+</head>
+
+<body>
+    
+<!-- Top menu options -->
+<ul class="nav nav-tabs col-xs-8 col-sm-6 col-md-7 col-lg-7" role="tablist">
+  <li class="nav-item active">
+    <a class="nav-link" data-toggle="tab" href="#home" role="tab">Movie Search</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#profile" role="tab">About</a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content col-xs-11 col-sm-10 col-md-8 col-lg-8">
+    
+    <!-- movie search pane -->
+    <div class="tab-pane active col-xs-12 col-sm-12 col-md-12 col-lg-12" id="home" role="tabpanel">
+        <h2>Search for movies</h2>
+        
+        <form role="form">
+            <div class="row">
+                <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <label for="inputlg">Search for a move from the OMDb:</label>
+                    <input id="inputSearch" type="text" class="form-control"/>
+                </div>
+            </div>
+            <div class="row col-xs-8 col-sm-12 col-md-8 col-lg-8">
+                <button type="button" class="btn btn-primary btn-lg" onclick="searching(inputSearch.value)">Search</button>
+            </div>
+        </form>
+        
+        <br><br><br>
+        
+        <div class="row">
+            <p class="col-xs-12 col-sm-12 col-md-8 col-lg-8" id="info"></p>
+        </div>
+        
+        <div id="table_Div" class="container hide">
+            <table id="table_id" class="display">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </div> <!-- movie search tab-pane -->
+    
+    <!-- About -->
+    <div class="tab-pane col-xs-12 col-sm-8 col-md-8 col-lg-8" id="profile" role="tabpanel">
+        <h2>About</h2>
+        <p>This site is a code test for HiQ by Linnea Strågefors.
+        </p>
+        
+        <p>Here you can search for movies from the 
+        <a id='a-link' href='https://www.omdbapi.com/' target="_blank">Open Movie Database OMDb</a>. 
+        To see the movie, just click on the move from the result list. 
+        A new window will then open, showing the move at 
+        <a id='a-link' href='http://www.imdb.com/' target="_blank">IMDb.com</a>.
+        </p>
+    
+    </div> <!-- about tab-pane -->
+</div> <!-- tab-content -->
+
+    <!-- libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="/views/movieSearch.js"></script>
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.js"></script>
+    
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "omb-search-hiq-codetest",
+  "version": "1.0.0",
+  "description": "HiQ code test: search site for movies using OMDb API",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Linnea Strågefors <mail.linnea.s@gmail.com>",
+  "license": "ISC"
+}
